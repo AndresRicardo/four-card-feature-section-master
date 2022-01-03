@@ -114,12 +114,48 @@ p{
     border-color: var(--color-Blue);
 }
 
-.attribution{
+footer{
     display: inline-block;
     align-self: flex-end;
 
 }
 
-@media(min-width: var(--size-Mobile)){
+@media(min-width: 376px){
+    .container{
+        width: 100vw;
+    }
 
+    .page-header{                   /*header*/
+        width: 540px;
+        margin: 50px 0px 40px 0px;
+        background-color: var(--color-Very-Light-Gray);
+        text-align: center;
+    }
+
+    h1{
+        font-size: 2.2em;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card{
+        height: fit-content;
+        margin: 20px 10px;
+    }
+
+    #supervisor{
+        align-self: center;
+    }
+
+    #calculator{
+        align-self: center;
+    }
+
+    footer{
+        align-self: flex-start;
+    }
 }
