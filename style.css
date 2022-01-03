@@ -1,0 +1,125 @@
+:root{
+                /*Layouts*/
+    --size-Mobile: 375px;
+    --size-Desktop: 1440px;
+
+                /*Primary Colors*/
+    --color-Red: hsl(0, 78%, 62%);
+    --color-Cyan: hsl(180, 62%, 55%);
+    --color-Orange: hsl(34, 97%, 64%);
+    --color-Blue: hsl(212, 86%, 64%);
+
+                /*Neutral Colors*/
+    --color-Very-Dark-Blue: hsl(234, 12%, 34%);
+    --color-Grayish-Blue: hsl(229, 6%, 66%);
+    --color-Very-Light-Gray: hsl(0, 0%, 98%);
+
+                /*Typography*/
+    --size-Font-size: 15px;
+
+                /*Fonts*/
+
+/*- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 200, 400, 600*/
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+
+    /* background-color: violet; */
+}
+
+.container{
+    width: 375px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    color: var(--color-Grayish-Blue);
+    
+
+    /* background-color: aqua; */
+}
+
+.page-header{                   /*header*/
+    width: 360px;
+    margin: 50px 0px 40px 0px;
+    background-color: var(--color-Very-Light-Gray);
+    text-align: center;
+}
+
+h1{
+    font-size: 1.7em;
+    font-weight: 200;
+    padding-bottom: 15px;
+    color: var(--color-Very-Dark-Blue);
+}
+
+p{
+    font: var(--size-Font-size);
+    font-weight: 400;
+}
+
+.cards{                         /*section*/
+    margin: 10px 0px;
+
+    /* background-color: var(--color-Very-Light-Gray); */
+}
+
+.card{
+    width: 360px;
+    margin: 20px 0px;
+    padding: 20px;
+    border-radius: 0.5em;
+    border-top: solid;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 20px 1px var(--color-Grayish-Blue);
+
+    background-color: var(--color-Very-Light-Gray);
+}
+
+.card .card-tittle{
+    color: var(--color-Very-Dark-Blue);
+    margin-bottom: 10px;
+}
+
+.card .card-image{
+    align-self: flex-end;
+}
+
+#supervisor{
+    border-color: var(--color-Cyan);
+}
+#team-builder{
+    border-color: var(--color-Red);
+}
+#karma{
+    border-color: var(--color-Orange);
+}
+#calculator{
+    border-color: var(--color-Blue);
+}
+
+.attribution{
+    display: inline-block;
+    align-self: flex-end;
+
+}
+
+@media(min-width: var(--size-Mobile)){
+
+}
